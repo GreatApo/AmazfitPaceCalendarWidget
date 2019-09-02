@@ -9,22 +9,24 @@ public class APtranslations {
     public static class translations {
 
         public static String[] codes = {
-                "en", "zh", "hr", "cz", "nl", "fr", "de", "gr", "he", "hu", "it", "ja", "kr", "pl", "pt", "ro", "ru", "sk", "es", "th", "tr",
+                "en", "bg", "zh", "hr", "cz", "dk", "nl", "fr", "de", "gr", "he", "hu", "it", "ja", "kr", "pl", "pt", "ro", "ru", "sk", "es", "th", "tr", "vn"
         };
 
         public static String[] languages = {
-                "English", "中文", "Hrvatski", "Czech", "Nederlands", "Français", "Deutsch", "Ελληνικά", "עברית", "Magyar", "Italiano", "日本語", "한국어", "Polski", "Português", "Română", "Русский", "Slovenčina", "Español", "ไทย", "Türkçe",
+                "English", "Български", "中文", "Hrvatski", "Czech", "Dansk", "Nederlands", "Français", "Deutsch", "Ελληνικά", "עברית", "Magyar", "Italiano", "日本語", "한국어", "Polski", "Português", "Română", "Русский", "Slovenčina", "Español", "ไทย", "Türkçe", "Tiếng Việt",
         };
 
         public static String[] languages_en = {
-                "English", "Chinese", "Croatian", "Czech", "Dutch", "French", "German", "Greek", "Hebrew", "Hungarian", "Italian", "Japanese", "Korean", "Polish", "Portuguese", "Romanian", "Russian", "Slovak", "Spanish", "Thai", "Turkish",
+                "English", "Bulgarian", "Chinese", "Croatian", "Czech", "Danish", "Dutch", "French", "German", "Greek", "Hebrew", "Hungarian", "Italian", "Japanese", "Korean", "Polish", "Portuguese", "Romanian", "Russian", "Slovak", "Spanish", "Thai", "Turkish", "Vietnamese",
         };
 
         public static String[][] days = {
                 {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"},
+                {"Понеделник", "Вторник", "Сряда", "Четвъртък", "Петък", "Събота", "Неделя"},
                 {"星期天", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"},
                 {"Nedjelja", "Ponedjeljak", "Utorak", "Srijeda", "Četvrtak", "Petak", "Subota"},
                 {"Neděle","Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"},
+                {"Søndag","Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"},
                 {"Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"},
                 {"Dimanche", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"},
                 {"Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"},
@@ -42,13 +44,16 @@ public class APtranslations {
                 {"Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"},
                 {"อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ุกร์", "สาร์"},
                 {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"},
+                {"Chủ Nhật","Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"}
         };
 
         public static String[][] months = {
                 {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"},
+                {"Януари", "Февруари", "Март", "Април", "май", "Юни", "Юли", "Август", "Септември", "Октомври", "Ноември" , "Декември"},
                 {"一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"},
                 {"Siječanj", "Veljača", "Ožujak", "Travanj", "Svibanj", "Lipanj", "Srpanj", "Kolovoz", "Rujan", "Listopad", "Studeni", "Prosinac"},
                 {"Leden", "Únor", "Březen", "Duben", "Květen", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"},
+                {"Januar", "Februar", "Marts", "April", "Maj", "Juni", "Juli", "August", "September", "Oktober", "November", "December"},
                 {"Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"},
                 {"Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "octobre", "Novembre", "Décembre"},
                 {"Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"},
@@ -66,13 +71,16 @@ public class APtranslations {
                 {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"},
                 {"มกราคม", "กุมภาพันธ์", "ีนาคม", "เมษายน", "พฤษภาคม", "มิถุนายน", "กรกฎาคม", "สิงหาคม", "กันยายน", "ตุลาคม", "พฤศจิกายน", "ธันวาคม"},
                 {"Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"},
+                {"Tháng 1", "Tháng 2", "Tháng 3", "Tháng 4", "Tháng 5", "Tháng 6", "Tháng 7", "Tháng 8", "Tháng 9", "Tháng 10", "Tháng 11", "Tháng 12"}
         };
 
         public static String[][] other = {
                 {"Select color","Show year","Monday 1st", "Vibrate", "Weeks No"},                  //"English",
+                {"Изберете цвят", "Показване на година", "Първо понеделник", "Вибриране", "Седмица Номер"},// Bulgarian
                 {"选择颜色","显示年份","星期一放1", "Vibrate", "Weeks No"},                           //"Chinese",
                 {"Odaberite boju","Prikaži godinu","Od ponedjeljka", "Vibriraj", "Br tjedna"},     //Croatian,
                 {"Vyberte barvu", "Zobrazit rok", "Od pondělka", "Vibrate", "Weeks No"},           //"Czech",
+                {"Vælg farve","Vis år","Mandag først","Vibrer","Uge nr"},                          //"Danish", by thra1982
                 {"Selecteer kleur","Toon jaar","Maandag 1e", "Vibrate", "Weeks No"},               //"Dutch"
                 {"Choisissez la couleur","Afficher l'année","Mettez 1er", "Vibrate", "Weeks No"},  //"French",
                 {"Farbe auswählen","Jahr anzeigen","Montag erste", "Vibrate", "Weeks No"},         //"German",
@@ -90,6 +98,7 @@ public class APtranslations {
                 {"Seleccionar el color","Mostrar año","Lunes 1°", "Vibrate", "Weeks No"},          //"Spanish"
                 {"เลือกสี", "แสดงปี", "ัเริ่มวันจันทร์", "สั่น", "เลขสัปดาห์"},                                      //"Thai", by iamping
                 {"Renk seç","Yılı göster","Pazartesi 1", "Vibrate", "Weeks No"},                   //"Turkish"
+                {"Chọn màu","Hiện năm","Thứ 2 1st","Báo rung","Tuần thứ"}                          //"Vietnamese", by chienkd
         };
 
         public static String[] getDays(int lang) {
