@@ -2,6 +2,7 @@
     <string name="app_name">Pace Calendar Widget</string>
     <!-- Timeline -->
     <string name="timeline_name">Timeline</string>
+    <string name="calendar_name">Calendar</string>
     <string name="bull">⚫</string>
     <string name="refresh">↺</string>
     <string name="top">▲</string>

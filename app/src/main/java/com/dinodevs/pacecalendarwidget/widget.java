@@ -139,7 +139,7 @@ public class widget extends AbstractPlugin {
         about.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                widget.this.toast("Calendar Widget v" + widget.this.version + "\n'\nby GreatApo,\nLFOM & DarkThanos" + (widget.this.errors.length() > 0 ? " Errors: " + widget.this.errors : ""));
+                widget.this.toast("Calendar Widget\n v" + widget.this.version + "\n\nby GreatApo,\nLFOM & DarkThanos" + (widget.this.errors.length() > 0 ? " Errors: " + widget.this.errors : ""));
                 widget.this.vibrate();
             }
         });
