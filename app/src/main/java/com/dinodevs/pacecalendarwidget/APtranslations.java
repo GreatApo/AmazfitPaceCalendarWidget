@@ -44,7 +44,7 @@ public class APtranslations {
                 {"Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"},
                 {"อาทิตย์", "จันทร์", "อังคาร", "พุธ", "พฤหัสบดี", "ุกร์", "สาร์"},
                 {"Pazar", "Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi"},
-                {"Chủ Nhật","Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7"}
+                {"CN","T2", "T3", "T4", "T5", "T6", "T7"}
         };
 
         public static String[][] months = {
@@ -76,28 +76,28 @@ public class APtranslations {
 
         public static String[][] other = {
                 {"Select color","Show year","Monday 1st", "Vibrate", "Weeks No"},                  //"English",
-                {"Изберете цвят", "Показване на година", "Първо понеделник", "Вибриране", "Седмица Номер"},// Bulgarian
-                {"选择颜色","显示年份","星期一放1", "Vibrate", "Weeks No"},                           //"Chinese",
+                {"Изберете цвят", "Показване на година", "Първо понеделник", "Вибриране", "Седмица"},// Bulgarian
+                {"选择颜色","显示年份","星期一放1", "颤动", "周数"},                                    //"Chinese",
                 {"Odaberite boju","Prikaži godinu","Od ponedjeljka", "Vibriraj", "Br tjedna"},     //Croatian,
-                {"Vyberte barvu", "Zobrazit rok", "Od pondělka", "Vibrate", "Weeks No"},           //"Czech",
+                {"Vyberte barvu", "Zobrazit rok", "Od pondělka", "Vibrovat", "Týdny č"},           //"Czech",
                 {"Vælg farve","Vis år","Mandag først","Vibrer","Uge nr"},                          //"Danish", by thra1982
-                {"Selecteer kleur","Toon jaar","Maandag 1e", "Vibrate", "Weeks No"},               //"Dutch"
-                {"Choisissez la couleur","Afficher l'année","Mettez 1er", "Vibrate", "Weeks No"},  //"French",
-                {"Farbe auswählen","Jahr anzeigen","Montag erste", "Vibrate", "Weeks No"},         //"German",
+                {"Selecteer kleur","Toon jaar","Maandag 1e", "Trillen", "Weken Nee"},              //"Dutch"
+                {"Choisissez la couleur","Afficher l'année","Mettez 1er", "Vibrer", "Semaines Non"},  //"French",
+                {"Farbe auswählen","Jahr anzeigen","Montag erste", "Vibrieren", "Wochen Nr"},         //"German",
                 {"Επιλογή χρώματος","Εμφάνιση χρονιάς","Δευτέρα 1η", "Δόνηση", "Αρ εβδομάδας"},    //"Greek",
-                {"בחירת צבע","הצג שנה","החל מיום שני", "Vibrate", "Weeks No"},                     //"Hebrew"
-                {"Válasszon színt","Az év megjelenítése","Hétfő 1", "Vibrate", "Weeks No"},        //"Hungarian",
-                {"Seleziona colore","Mostra l'anno","Lunedì 1°", "Vibrate", "Weeks No"},           //"Italian",
-                {"色を選択","年を表示","月曜日に入れて", "Vibrate", "Weeks No"},                       //"Japanese",
+                {"בחירת צבע","הצג שנה","החל מיום שני", "רטט", "שבועות לא"},                         //"Hebrew"
+                {"Válasszon színt","Az év megjelenítése","Hétfő 1", "Rezeg", "Hetek Nem"},        //"Hungarian",
+                {"Seleziona colore","Mostra l'anno","Lunedì 1°", "Vibrare", "Settimane n"},        //"Italian",
+                {"色を選択","年を表示","月曜日に入れて", "バイブレーション", "週なし"},                   //"Japanese",
                 {"색상 선택","연도 표시","색상 선택", "진동", "주차 표시"},                             //"Korean", by eastway11
-                {"Wybierz kolor","Pokaż rok","Poniedziałek 1.", "Vibrate", "Weeks No"},            //"Polish",
-                {"Selecione a cor","Mostrar ano","Segunda-feira", "Vibrate", "Weeks No"},          //"Portuguese",
+                {"Wybierz kolor","Pokaż rok","Poniedziałek 1.", "Wibrować", "Tygodnie nr"},        //"Polish",
+                {"Selecione a cor","Mostrar ano","Segunda-feira", "Vibrar", "Semanas Não"},        //"Portuguese",
                 {"Alege Culoarea","Arată Anul","Luni Prima", "Vibrație", "Nr. Săptămână"},         //"Romanian",
-                {"Выбор цвета","Показ года","Пон. 1-й", "Vibrate", "Weeks No"},                    //"Russian",
-                {"Vyberte farbu","Zobraziť rok","Pondelok 1.", "Vibrate", "Weeks No"},             //"Slovak",
-                {"Seleccionar el color","Mostrar año","Lunes 1°", "Vibrate", "Weeks No"},          //"Spanish"
+                {"Выбор цвета","Показ года","Пон. 1-й", "вибрировать", "Недели нет"},              //"Russian",
+                {"Vyberte farbu","Zobraziť rok","Pondelok 1.", "Vibrovať", "Týždne č"},            //"Slovak",
+                {"Seleccionar el color","Mostrar año","Lunes 1°", "Vibrar", "Semanas No"},         //"Spanish"
                 {"เลือกสี", "แสดงปี", "ัเริ่มวันจันทร์", "สั่น", "เลขสัปดาห์"},                                      //"Thai", by iamping
-                {"Renk seç","Yılı göster","Pazartesi 1", "Vibrate", "Weeks No"},                   //"Turkish"
+                {"Renk seç","Yılı göster","Pazartesi 1", "Titremek", "Hafta Yok"},                 //"Turkish"
                 {"Chọn màu","Hiện năm","Thứ 2 1st","Báo rung","Tuần thứ"}                          //"Vietnamese", by chienkd
         };
 
