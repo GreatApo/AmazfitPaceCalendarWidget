@@ -332,6 +332,8 @@ public class APcalendar {
         }
 
         // Populate week boxes
+        if (this.isMondayFirst)
+            week--;
         for (int i = 0; i < 6; i++) {
             this.view_week[i].setText(String.valueOf(week+i));
         }
