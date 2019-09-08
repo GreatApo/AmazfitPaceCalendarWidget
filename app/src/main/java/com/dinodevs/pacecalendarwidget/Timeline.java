@@ -100,7 +100,6 @@ public class Timeline extends Activity {
         } else {
             header_pattern = Constants.HEADER_PATTERN_12H;
             time_pattern = Constants.TIME_PATTERN_12H;
-
         }
 
         // Show Time/Date
@@ -151,7 +150,6 @@ public class Timeline extends Activity {
             }
         });
 
-
         // Scroll to top
         TextView top = this.mView.findViewById(R.id.backToTop);
         top.setOnClickListener(new View.OnClickListener() {
@@ -174,16 +172,17 @@ public class Timeline extends Activity {
         eventsList = new ArrayList<>();
         long next_event = 0;
 
+        // Load data
+        calendarEvents = Settings.System.getString(mContext.getContentResolver(), Constants.CALENDAR_DATA);
+
+        // Default when undefined/empty
+        if (calendarEvents == null || calendarEvents.isEmpty()) {
+            calendarEvents = "{\"events\":[]}";
+            Timeline.this.toast("Empty or null events data!", true);
+        }
+
+        // Read Data
         try {
-            // Load data
-            calendarEvents = Settings.System.getString(mContext.getContentResolver(), Constants.CALENDAR_DATA);
-
-            if (!(calendarEvents != null && !calendarEvents.isEmpty() && !calendarEvents.equals("{\"events\":[]}")))
-                Timeline.this.toast("No events found!", true);
-
-            if (calendarEvents == null)
-                calendarEvents = "{\"events\":[]}";
-
             // Check if correct form of JSON
             JSONObject json_data = new JSONObject(calendarEvents);
 
@@ -199,7 +198,9 @@ public class Timeline extends Activity {
                 // Get data
                 for(int i=0; i<event_number; i++) {
                     JSONArray data = json_data.getJSONArray(Constants.EVENTS_DATA).getJSONArray(i);
+
                     HashMap<String, String> event = new HashMap<>();
+                    event.put(DOT, mContext.getResources().getString(R.string.bull) );
 
                     // adding each child node to HashMap key => value
                     event.put(TITLE, data.getString(0));
@@ -209,10 +210,8 @@ public class Timeline extends Activity {
                     //event.put("location", data.getString(4));
                     //event.put("account", data.getString(5));
 
+                    // Get event "start" data
                     String start;
-                    String end = "";
-                    String location = "";
-
                     if(!data.getString(2).equals("") && !data.getString(2).equals("null")) {
                         calendar.setTimeInMillis(Long.parseLong(data.getString(2)));
 
@@ -220,8 +219,10 @@ public class Timeline extends Activity {
                             // Event expired, go to next
                             continue;
                         }
-                        if( next_event ==0 ) // Hence this is the next event
-                            next_event = calendar.getTimeInMillis();
+
+                        // Mark first next event
+                        if( next_event == 0 )
+                            next_event = calendar.getTimeInMillis();// TODO not used
 
                         start = dateToString(calendar, time_pattern);
 
@@ -240,51 +241,37 @@ public class Timeline extends Activity {
                         continue;
                     }
 
-                    if(!data.getString(3).equals("") && !data.getString(3).equals("null")) {
-                        calendar.setTimeInMillis(Long.parseLong(data.getString(3)));
-                        end = " - "+ dateToString(calendar, time_pattern);
-                    }
+                    // Get event "end" data
+                    String end = "";
 
-                    //All day events
+                    // All day events
                     if((start.startsWith("00") || start.startsWith("12")) && ("null".equals(data.getString(3)) || data.getString(3).isEmpty())) {
                         start = getString(R.string.all_day);
-                        end = "";
+                    }else{
+                        if(!data.getString(3).equals("") && !data.getString(3).equals("null")) {
+                            calendar.setTimeInMillis(Long.parseLong(data.getString(3)));
+                            end = " - "+ dateToString(calendar, time_pattern);
+                        }
                     }
 
-                    if(!data.getString(4).equals("") && !data.getString(4).equals("null")) {
+                    // Get location data
+                    String location = "";
+                    if(!data.getString(4).equals("") && !data.getString(4).equals("null"))
                         location = "\n@ "+data.getString(4);
-                    }
+
                     event.put(SUBTITLE, start + end + location );
-                    event.put(DOT, mContext.getResources().getString(R.string.bull) );
-                    // adding events to events list
+
+                    // Add event to events list
                     eventsList.add(event);
                 }
             }else{
-                HashMap<String, String> event = new HashMap<>();
-                event.put("title", getString(R.string.no_events));
-                //event.put("description", "-");
-                //event.put("start", "-");
-                //event.put("end", "-");
-                //event.put("location", "-");
-                //event.put("account", "-");
-                event.put(SUBTITLE, "-");
-                event.put(DOT, "" );
-                eventsList.add(event);
+                Timeline.this.toast("No events data in JSON.", true);
             }
         } catch (JSONException e) {
-            //default
-            HashMap<String, String> event = new HashMap<>();
-            event.put(TITLE, getString(R.string.no_events));
-            //event.put("description", "-");
-            //event.put("start", "-");
-            //event.put("end", "-");
-            //event.put("location", "-");
-            //event.put("account", "-");
-            event.put(SUBTITLE, "-");
-            event.put(DOT, "" );
-            eventsList.add(event);
+            Timeline.this.toast("Corrupted data!", true);
         }
 
+        // No events message
         if(eventsList.isEmpty()){
             HashMap<String, String> elem = new HashMap<>();
             elem.put("title", "\n"+mContext.getResources().getString(R.string.no_events));
