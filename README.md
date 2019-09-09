@@ -1,4 +1,4 @@
-[![latest release](https://img.shields.io/github/release/GreatApo/AmazfitPaceCalendarWidget.svg?colorB=green&label=latest%20release&style=flat-square) ![release date](https://img.shields.io/badge/release%20date-2019.09.02-orange.svg?style=flat-square) ![Downloads](https://img.shields.io/github/downloads/GreatApo/AmazfitPaceCalendarWidget/total.svg?style=flat-square) ![HitCount](http://hits.dwyl.io/GreatApo/AmazfitPaceCalendarWidget.svg)](https://github.com/GreatApo/AmazfitPaceCalendarWidget/releases/latest)
+[![latest release](https://img.shields.io/github/release/GreatApo/AmazfitPaceCalendarWidget.svg?colorB=green&label=latest%20release&style=flat-square) ![release date](https://img.shields.io/badge/release%20date-2019.09.09-orange.svg?style=flat-square) ![Downloads](https://img.shields.io/github/downloads/GreatApo/AmazfitPaceCalendarWidget/total.svg?style=flat-square) ![HitCount](http://hits.dwyl.io/GreatApo/AmazfitPaceCalendarWidget.svg)](https://github.com/GreatApo/AmazfitPaceCalendarWidget/releases/latest)
 
 # Amazfit Pace/Stratos/Verge Calendar Widget
 ![Amazfit Pace Calendar Widget Banner](other%20files/amazfit-calendar-widget.png)
