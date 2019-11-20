@@ -324,10 +324,17 @@ public class Timeline extends Activity {
                     activity.runOnUiThread(showToast);
                     if (iCalSupport.checkICSFile(mContext, icalURL)) {
                         calendarEvents = iCalSupport.getICSCalendarEvents(mContext);
+                        toastMsg = "Refreshing events...";
+                        activity.runOnUiThread(showToast);
+
                     } else {
                         toastMsg = "\niCal data not found.\nPlease write/place your ICS feed URL/file at:\n/sdcard/Android/data/com.dinodevs.pacecalendarwidget/files/pacecalendar.txt";
                         activity.runOnUiThread(showToast);
                     }
+
+                    lv.post(loadEvents);
+
+                    /*
                     if (calendarEvents == null) {
                         toastMsg = "No new events!";
                         activity.runOnUiThread(showToast);
@@ -337,6 +344,7 @@ public class Timeline extends Activity {
                         activity.runOnUiThread(showToast);
                         lv.post(loadEvents);
                     }
+                    */
             }
         }).start();
     }
