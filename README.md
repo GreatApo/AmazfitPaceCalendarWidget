@@ -1,4 +1,4 @@
-[![latest release](https://img.shields.io/github/release/GreatApo/AmazfitPaceCalendarWidget.svg?colorB=green&label=latest%20release&style=flat-square) ![release date](https://img.shields.io/badge/release%20date-2019.09.09-orange.svg?style=flat-square) ![Downloads](https://img.shields.io/github/downloads/GreatApo/AmazfitPaceCalendarWidget/total.svg?style=flat-square) ![HitCount](http://hits.dwyl.io/GreatApo/AmazfitPaceCalendarWidget.svg)](https://github.com/GreatApo/AmazfitPaceCalendarWidget/releases/latest)
+[![latest release](https://img.shields.io/github/release/GreatApo/AmazfitPaceCalendarWidget.svg?colorB=green&label=latest%20release&style=flat-square) ![release date](https://img.shields.io/badge/release%20date-2020.03.10-orange.svg?style=flat-square) ![Downloads](https://img.shields.io/github/downloads/GreatApo/AmazfitPaceCalendarWidget/total.svg?style=flat-square) ![HitCount](http://hits.dwyl.io/GreatApo/AmazfitPaceCalendarWidget.svg)](https://github.com/GreatApo/AmazfitPaceCalendarWidget/releases/latest)
 
 # Amazfit Pace/Stratos/Verge Calendar Widget
 ![Amazfit Pace Calendar Widget Banner](other%20files/amazfit-calendar-widget.png)
@@ -9,7 +9,8 @@ So, here is the first Calendar Widget for our Amazfit Pace/Stratos!
 
 
 ### Features
-- This is a Pace/Stratos/Verge Widget
+- This is a Pace/Stratos/Verge Widget (2 actually)
+- Calendar & Timeline widgets
 - Press gear icon for settings
 - Navigate between months (Swipe / Buttons)
 - Refresh to current date
@@ -23,7 +24,7 @@ So, here is the first Calendar Widget for our Amazfit Pace/Stratos!
 - Settings are saved
 - Calendar events are shown (new style, phone events through Amazmod or iCalendar feed/file)
 - You can touch on each day for more events info
-- [Timeline Widget](https://forum.xda-developers.com/smartwatch/amazfit/app-widget-timeline-v1-0-1-pace-stratos-t3894632) is also integrated in the calendar (for better events view) but also in the app list
+- Timeline view of the event as a widget and as a launchable app
 - Support of iCalendar feed (URL) and local ICS file
 
 

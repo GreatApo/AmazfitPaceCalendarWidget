@@ -9,8 +9,8 @@ android {
         targetSdkVersion 22
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
-        versionName '1.9.5'
-        versionCode 20190908
+        versionName '1.9.6'
+        versionCode 20200310
     }
     buildTypes {
         release {
