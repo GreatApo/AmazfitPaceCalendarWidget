@@ -616,7 +616,7 @@ public class widget extends AbstractPlugin {
     // Return the title for this page, used when the page is disabled in the app list. In this case, the app name is used
     @Override
     public String getWidgetTitle(Context paramContext) {
-        return this.mContext.getResources().getString(R.string.app_name);
+        return this.mContext.getResources().getString(R.string.calendar_name);
     }
 
 
